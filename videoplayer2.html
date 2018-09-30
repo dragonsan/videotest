@@ -16,9 +16,12 @@
         </video>
     </body>
     <script>
+    var calledtime = 0;
     function updateTrackTime(track) {
           var currTime = Math.floor(track.currentTime).toString(); 
-          console.log(currTime);
+        if (calledtime != currTime) {
+            console.log(currTime);
+        }
     }
     </script>
 </html>
